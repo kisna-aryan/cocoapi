@@ -14,7 +14,7 @@ ext_modules = [
         sources=['../common/maskApi.c', 'pycocotools/_mask.pyx'],
         include_dirs = [np.get_include(), '../common'],
         extra_compile_args=[] # originally was ['-Wno-cpp', '-Wno-unused-function', '-std=c99'],
-        compiler_directives={'language_level' : "3"
+        compiler_directives={'language_level' : "3"}
     )
 ]
 
